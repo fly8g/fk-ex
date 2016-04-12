@@ -1,4 +1,4 @@
-package cn.zr.ex;
+package cn.fk.ex;
 
 import java.io.BufferedReader;
 import java.io.IOException;
