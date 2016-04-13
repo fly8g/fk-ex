@@ -37,5 +37,18 @@ public class MostFind {
 		}
 		System.out.println(outStr);
 	}
+/**
+1
+2
+3
+4
+5
+6
+6
+7
+8
+9
 
+6
+*/
 }

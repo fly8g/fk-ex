@@ -59,5 +59,9 @@ public class LCMCompute {
 		
 		return -1;
 	}
+/**
+5 7
 
+35
+ */
 }

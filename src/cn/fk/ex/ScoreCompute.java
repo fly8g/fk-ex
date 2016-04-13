@@ -26,5 +26,9 @@ public class ScoreCompute {
 	private static boolean validateNum(int i) {
 		return i >= 0 && i <= 150;
 	}
+/**
+80 90 80 90
 
+340 85
+*/
 }

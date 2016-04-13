@@ -32,4 +32,9 @@ public class StringReverse {
 	private static String reverse2(String str) {
 		return new StringBuffer(str).reverse().toString();
 	}
+/**
+abcde
+
+edcba
+ */
 }

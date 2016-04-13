@@ -12,11 +12,16 @@ public class StringTypeCount {
 		String str = br.readLine();
 		String[] strs = str.split(",");
 		int a = Integer.parseInt(strs[0]);
-		if (a <= 20 && strs[1].length() == a && isValidWord(strs[1])) {
+		if (a <= 20 && strs[1].length() == a) {
 			char[] n = strs[1].toCharArray();
 			int[] b = new int[a];
 			Arrays.fill(b, 1);
+			String dataDic = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 			for (int i = 0; i < a - 1; i++) {
+				if (dataDic.indexOf(n[i]) == -1) {
+					b[i] = 0;
+					continue;
+				}
 				for (int j = i + 1; j < a; j++) {
 					if (n[i] == n[j] && b[i] != 0) {
 						b[i]++;
@@ -33,22 +38,9 @@ public class StringTypeCount {
 			System.out.println(cnt);
 		}
 	}
+/**
+6,abaaal
 
-	/**
-	 * 验证str所含字符是否为
-	 *  a~z,A~Z,0~9
-	 * @param str
-	 * @return
-	 */
-	private static boolean isValidWord(String str) {
-		String dataDic = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		char[] array = str.toCharArray();
-		for (char ch : array) {
-			if (dataDic.indexOf(ch) == -1) {
-				return false;
-			}
-		}
-		return true;
-	}
-
+3
+*/
 }

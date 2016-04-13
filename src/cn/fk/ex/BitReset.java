@@ -21,5 +21,9 @@ public class BitReset {
 			System.out.println(i1);
 		}
 	}
+/**
+891 7
 
+1019
+*/
 }
